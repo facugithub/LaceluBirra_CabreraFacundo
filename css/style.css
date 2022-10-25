@@ -1,0 +1,482 @@
+/*Reset css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*HEADER-NAVBAR*/
+.header {
+  background-color: black;
+  height: 100px;
+  width: auto;
+  font-family: "Reem Kufi", sans-serif; /*funte del codigo a usar en el header*/
+  font-size: 20px; /*tamaño de la letra*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*justify-content: space-evenly;*/ /*space-evely: distribuye los items de manera similar entre el conteiner*/
+  padding: 5px 10%;
+}
+
+/*Logo*/
+
+.header img:hover {
+  transform: scale(
+    1.2
+  ); /*permite determinar una transformacion con aumento desu tamañan a 1.2*/
+}
+
+.logo {
+  height: 130px;
+  width: auto;
+  cursor: pointer;
+  transition: all 0.9s;
+}
+
+/*Header navLinks*/
+.header .navLinks li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.navLinks a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+/*Transitions navLinks*/
+.header .navLinks li:hover {
+  /*hover nos permite establecer que al seleccionar el elemento de la pagina, se aplique algun evento que indique su seleccion*/
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+
+.header .navLinks li a:hover {
+  color: rgb(242, 105, 7);
+  transition: all 0.8s;
+}
+
+/*FOOTER*/
+footer {
+  /*position: fixed;*/ /*como hacer para que el footer quede fijo pero se mueva y no intervenga en la navegacion de la pagina*/
+  bottom: 0px;
+  width: 100%;
+  /*background: #111;*/
+  background-image: linear-gradient(45deg, rgb(20, 19, 19), rgb(245, 63, 17));
+  font-family: "Reem Kufi", sans-serif;
+  color: whitesmoke;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+  margin-left: 170px;
+}
+
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 20px 0 0 0; /* es lo mismo que colocar un margin top:0; haceindo que se separe lo items de los elementos de arriba*/
+}
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+  padding: 0 10px;
+  color: white;
+}
+
+.left .content .social a i {
+  height: 40px;
+  width: 40px;
+  background: rgb(60, 49, 49);
+  line-height: 40px;
+  text-align: center;
+  font-size: 28px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.left .content .social a i:hover {
+  background: rgb(248, 227, 0);
+}
+
+.center i {
+  margin-bottom: 15px;
+}
+
+/*MAIN -CAROUSSEL*/
+/*a desarrollar */
+
+/*CONTACTO*/
+/* a desarrollar*/
+.bodyContact {
+  background-image: radial-gradient(rgb(211, 72, 29), rgb(51, 45, 45));
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-template-areas:
+    "contactImg contactForm contactForm contactForm"
+    " iframeContact contactLocation contactLocation contactLocation";
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(253, 254, 253, 0.921);
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.contactImg{
+  grid-area: contactImg;
+}
+
+.contactImg img{
+  border-radius: 3%;
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+  -ms-border-radius: 3%;
+  -o-border-radius: 3%;
+}
+
+.contactForm{
+  grid-area: contactForm;
+}
+
+.iframeContact{
+  grid-area: iframeContact;
+}
+
+.contactLocation{
+  grid-area: contactLocation;
+  line-height: 30px;
+}
+
+/*PRODUCTOS*/
+
+body {
+  background-color: rgb(241, 238, 235);
+}
+
+.cards .ipa {
+  background-color: rgb(243, 193, 29);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+#regalona {
+  background-color: #3fa796;
+}
+#queen {
+  background-color: #8267be;
+}
+#dulce-salteña {
+  background-color: #502064;
+}
+#negra-poly {
+  background-color: #d8cbbb;
+}
+.cards .ipa {
+  margin: 5%;
+  padding: 10px 10px;
+  display: flex;
+}
+
+#Ipa {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 68px;
+  color: whitesmoke;
+  text-align: center;
+}
+#info-ipa {
+  font-family: "Open Sans", sans-serif;
+  font-size: 38px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.card-footer {
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*justify-content: space-evenly;*/
+  margin-top: 15%;
+  font-size: 19px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  left: 59%;
+  bottom: 60px;
+}
+
+/*SERVICIOS*/
+.containerServicios{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  height: 35%;
+  justify-content: center;
+  margin: auto;   
+  column-gap: 15px; 
+  color: rgb(21, 20, 15);
+  padding: 5%;
+}
+.growlerInfo p{
+  text-align: center;
+  padding: 10px 10px;
+  margin-right: 10px;
+}
+.growlerInfo h2{
+  text-align: center;
+}
+
+.growlerContainer img{
+  width: 100%;
+  margin: 5px 5px;
+  border-radius: 3%;
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+  -ms-border-radius: 3%;
+  -o-border-radius: 3%;
+}
+.growlerInfo .btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn a{
+  text-decoration: none;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 2large;
+  padding: 18px 35px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  background-image: linear-gradient(to right, #f46b45 0%, #eea849  51%, #f46b45  100%);
+  color: white;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  -webkit-transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  -moz-transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  -ms-transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  -o-transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;   
+}
+
+.btn a:hover{
+cursor: pointer;
+transform: translateY(-3px);
+-webkit-transform: translateY(-3px);
+-moz-transform: translateY(-3px);
+-ms-transform: translateY(-3px);
+-o-transform: translateY(-3px);
+}
+
+/* Media Queries*/
+
+/* Laptop*/
+@media screen and (max-width: 1440px) {
+  .header {
+    font-size: 15px;
+  }
+}
+
+/*Laptop*/
+@media screen and (max-width: 1024px) {
+  .header {
+    font-size: 10px;
+  }
+  .header .navLinks li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*position: fixed;*/ /*como hacer para que el footer quede fijo pero se mueva y no intervenga en la navegacion de la pagina*/
+    bottom: 0px;
+    width: 100%;
+    /*background: #111;*/
+    background-image: linear-gradient(45deg, rgb(20, 19, 19), rgb(245, 63, 17));
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 10px;
+    color: whitesmoke;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+  
+  .box h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  
+  .box .content {
+    margin: 0; /* es lo mismo que colocar un margin top:0; haceindo que se separe lo items de los elementos de arriba*/
+  }
+  
+  .left .content .social {
+    margin:0;
+  }
+  
+  .left .content .social a {
+    /*padding: 0 10px;*/
+    color: white;
+  }
+   
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 10px;
+    padding: 1% 0;
+  }
+
+  .header .navLinks li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*position: fixed;*/ /*como hacer para que el footer quede fijo pero se mueva y no intervenga en la navegacion de la pagina*/
+    bottom: 0px;
+    width: 100%;
+    /*background: #111;*/
+    background-image: linear-gradient(45deg, rgb(20, 19, 19), rgb(245, 63, 17));
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 10px;
+    color: whitesmoke;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+  
+  .box h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  
+  .box .content {
+    margin: 0; /* es lo mismo que colocar un margin top:0; haceindo que se separe lo items de los elementos de arriba*/
+  }
+  
+  .left .content .social {
+    margin:0;
+  }
+  
+  .left .content .social a {
+    /*padding: 0 10px;*/
+    color: white;
+  }
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 425px){
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    width: auto;
+    font-family: "Reem Kufi", sans-serif; /*funte del codigo a usar en el header*/
+    font-size: 10px; /*tamaño de la letra*/
+    /*justify-content: space-evenly;*/ /*space-evely: distribuye los items de manera similar entre el conteiner*/
+  }
+
+  .navLinks{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    line-height: 20px;
+    align-items: center;
+  }
+
+  /*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*position: fixed;*/ /*como hacer para que el footer quede fijo pero se mueva y no intervenga en la navegacion de la pagina*/
+    bottom: 0px;
+    width: 100%;
+    /*background: #111;*/
+    background-image: linear-gradient(45deg, rgb(20, 19, 19), rgb(245, 63, 17));
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 10px;
+    color: whitesmoke;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+  
+  .box h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  
+  .box .content {
+    margin: 0; /* es lo mismo que colocar un margin top:0; haceindo que se separe lo items de los elementos de arriba*/
+  }
+  
+  .left .content .social {
+    margin:0;
+  }
+  
+  .left .content .social a {
+    /*padding: 0 10px;*/
+    color: white;
+  }
+   
+}
