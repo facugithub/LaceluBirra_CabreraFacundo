@@ -11,8 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&family=Roboto+Mono:wght@600&display=swap"
       rel="stylesheet"
     />
-     <!--CDN FONTS-LINK-->
-     <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <!--Boostrap CDN LINK-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!--CDN FONTS-LINK-->
+    <link
+      href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
     <!--Link css-->
     <link rel="stylesheet" href="../css/style.css" />
     <!--iCONS-->
@@ -26,10 +36,13 @@
     <title>Document</title>
   </head>
   <body>
-    
     <!--HEADER-NAVBAR-->
     <header class="header">
-      <img class="logo" src="../media/logo/laceluBirra.png" alt="" /><!--./media/logo/laceluBirra.png-->
+      <img
+        class="logo"
+        src="../media/logo/laceluBirra.png"
+        alt=""
+      /><!--./media/logo/laceluBirra.png-->
       <nav>
         <ul class="navLinks">
           <li><a href="../index.html">Home</a></li>
@@ -42,8 +55,9 @@
     </header>
     <!--MAIN-->
     <!--Realizar cards de servicios-->
-    <main class="containerServicios">
-      <div>
+    <main class="container-fluid row">
+      
+      <div class="col-md-6">
         <div class="growlerContainer">
           <img src="../media/laceluBirra/growler.svg" alt="" />
         </div>
@@ -55,12 +69,13 @@
             dolore dignissimos a atque, incidunt rerum nisi? Fugiat delectus
             vitae cupiditate impedit!
           </p>
-        <div class="btn">
-          <a href="">RECARGA TU GROWLER</a>
+          <div class="btn">
+            <a href="">RECARGA TU GROWLER</a>
+          </div>
         </div>
       </div>
-      </div>
-      <div>
+
+      <div class="col-md-6">
         <div class="growlerContainer">
           <img src="../media/laceluBirra/canillas.svg" alt="" />
         </div>
@@ -72,77 +87,82 @@
             dolore dignissimos a atque, incidunt rerum nisi? Fugiat delectus
             vitae cupiditate impedit!
           </p>
-        <div class="btn">
-          <a href="" class=" ">ALQUILAR UN CHOPP</a>
+          <div class="btn">
+            <a href="" class=" ">ALQUILAR UN CHOPP</a>
+          </div>
         </div>
-      </div>
       </div>
     </main>
-      <!--FOOTER-->
-  <footer>
-    <!-- 1.primero declacramos un <div class=contenedor> que va a contener los elementos del footer-->
-    <div class="main-content">
-      <!--2.separamos por cajas los elementos que ocuparan el footer-->
-      <!--declaramos tres cajas una izquierda, central y derecha-->
-      <!--Caja izquierda-->
-      <div class="left box">
-        <h2>NOSOTROS</h2>
-        <div class="content">
-          <p>
-            Somos una empresa Salteña, apasionados por la fabricacion de Cerveza
-            artesanal desde 2019. Contamos con variedades de Cervezas autoctonas
-            de la region y brindamos servicios de canillas cerveceras para
-            distintos eventos.
-          </p>
-          <div class="social">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+    <!--FOOTER-->
+    <footer>
+      <!-- 1.primero declacramos un <div class=contenedor> que va a contener los elementos del footer-->
+      <div class="main-content">
+        <!--2.separamos por cajas los elementos que ocuparan el footer-->
+        <!--declaramos tres cajas una izquierda, central y derecha-->
+        <!--Caja izquierda-->
+        <div class="left box">
+          <h2>NOSOTROS</h2>
+          <div class="content">
+            <p>
+              Somos una empresa Salteña, apasionados por la fabricacion de
+              Cerveza artesanal desde 2019. Contamos con variedades de Cervezas
+              autoctonas de la region y brindamos servicios de canillas
+              cerveceras para distintos eventos.
+            </p>
+            <div class="social">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-      <!--Caja central-->
-      <div class="center box">
-        <h2>DIRECCION</h2>
-        <div class="content">
-          <div class="place">
-            <span><i class="fa-solid fa-location-dot"></i></span>
-            <span>Olavarria 669, Salta-Argentina</span>
-          </div>
-          <div class="phone">
-            <span><i class="fa-solid fa-phone"></i></span>
-            <span>Tel:3875821402</span>
-          </div>
-          <div class="email">
-            <span><i class="fa-solid fa-envelope"></i></span>
-            <span>LaCeluBirra@gmail.com</span>
-          </div>
-          <div class="horarios">
-            <span><i class="fa-regular fa-clock"></i></span>
-            <span>Lunes a Viernes 9 a 17hs - Sábados 10 a 13hs</span>
-          </div>
-        </div>
-      </div>
-      <!--Caja Derecha-->
-      <div class="right box">
-        <h2>CONTACTO</h2>
-        <div class="content">
-          <form action="#">
+        <!--Caja central-->
+        <div class="center box">
+          <h2>DIRECCION</h2>
+          <div class="content">
+            <div class="place">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <span>Olavarria 669, Salta-Argentina</span>
+            </div>
+            <div class="phone">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <span>Tel:3875821402</span>
+            </div>
             <div class="email">
-              <div class="text">email*</div>
-              <input type="email" required />
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <span>LaCeluBirra@gmail.com</span>
             </div>
-            <div class="msg">
-              <div class="text">message*</div>
-              <textarea name="" id="" cols="30" rows="5" required></textarea>
+            <div class="horarios">
+              <span><i class="fa-regular fa-clock"></i></span>
+              <span>Lunes a Viernes 9 a 17hs - Sábados 10 a 13hs</span>
             </div>
-            <div class="btn">
-              <button type="submit">enviar</button>
-            </div>
-          </form>
+          </div>
+        </div>
+        <!--Caja Derecha-->
+        <div class="right box">
+          <h2>CONTACTO</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">email*</div>
+                <input type="email" required />
+              </div>
+              <div class="msg">
+                <div class="text">message*</div>
+                <textarea name="" id="" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">enviar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

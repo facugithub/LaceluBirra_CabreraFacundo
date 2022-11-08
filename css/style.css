@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+/*Background general body*/
+
+body {
+  background-color: rgb(241, 238, 235);
+}
+
 /*HEADER-NAVBAR*/
 .header {
   background-color: black;
@@ -20,7 +26,6 @@
 }
 
 /*Logo*/
-
 .header img:hover {
   transform: scale(
     1.2
@@ -116,36 +121,27 @@ footer {
   margin-bottom: 15px;
 }
 
-/*MAIN -CAROUSSEL*/
-/*a desarrollar */
-
 /*CONTACTO*/
 /* a desarrollar*/
-.bodyContact {
-  background-image: radial-gradient(rgb(211, 72, 29), rgb(51, 45, 45));
-}
-
 .contactContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    "contactImg contactForm contactForm contactForm"
-    " iframeContact contactLocation contactLocation contactLocation";
+    "contactImg contactForm "
+    " iframeContact contactLocation";
   grid-column-gap: 5%;
   grid-row-gap: 5%;
-  width: 100%;
-  margin: 0 auto;
-  background-color: rgba(253, 254, 253, 0.921);
-  padding: 20px;
-  border: 1px solid black;
+  margin-top: 1%;
+  background-color: rgb(241, 238, 235);
 }
 
-.contactImg{
+.contactImg {
   grid-area: contactImg;
 }
 
-.contactImg img{
+.contactImg img {
+  max-width: 100%;
   border-radius: 3%;
   -webkit-border-radius: 3%;
   -moz-border-radius: 3%;
@@ -153,23 +149,24 @@ footer {
   -o-border-radius: 3%;
 }
 
-.contactForm{
+.contactForm {
   grid-area: contactForm;
 }
 
-.iframeContact{
+.iframeContact {
   grid-area: iframeContact;
 }
 
-.contactLocation{
+.contactLocation {
   grid-area: contactLocation;
   line-height: 30px;
 }
 
 /*PRODUCTOS*/
 
-body {
-  background-color: rgb(241, 238, 235);
+/*Imagenes de Cervezas*/
+.ipa .img img {
+  max-width: 100%;
 }
 
 .cards .ipa {
@@ -179,6 +176,12 @@ body {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  margin: 3%;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #regalona {
@@ -193,21 +196,16 @@ body {
 #negra-poly {
   background-color: #d8cbbb;
 }
-.cards .ipa {
-  margin: 5%;
-  padding: 10px 10px;
-  display: flex;
-}
 
 #Ipa {
   font-family: "Archivo Black", sans-serif;
-  font-size: 68px;
+  font-size: 2rem;
   color: whitesmoke;
   text-align: center;
 }
 #info-ipa {
   font-family: "Open Sans", sans-serif;
-  font-size: 38px;
+  font-size: 1rem;
   color: whitesmoke;
   text-align: center;
 }
@@ -216,36 +214,28 @@ body {
   /*display: flex;*/
   /*flex-direction: row;*/
   /*justify-content: space-evenly;*/
-  margin-top: 15%;
-  font-size: 19px;
+  margin-top: 1%;
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   position: relative;
-  left: 59%;
-  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 3%;
+  bottom: 3%;
 }
 
 /*SERVICIOS*/
-.containerServicios{
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  height: 35%;
-  justify-content: center;
-  margin: auto;   
-  column-gap: 15px; 
-  color: rgb(21, 20, 15);
-  padding: 5%;
-}
-.growlerInfo p{
+.growlerInfo p {
   text-align: center;
   padding: 10px 10px;
   margin-right: 10px;
 }
-.growlerInfo h2{
+.growlerInfo h2 {
   text-align: center;
 }
 
-.growlerContainer img{
+.growlerContainer img {
   width: 100%;
   margin: 5px 5px;
   border-radius: 3%;
@@ -254,15 +244,15 @@ body {
   -ms-border-radius: 3%;
   -o-border-radius: 3%;
 }
-.growlerInfo .btn{
+.growlerInfo .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.btn a{
+.btn a {
   text-decoration: none;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 2large;
   padding: 18px 35px;
   border-radius: 40px;
@@ -270,32 +260,102 @@ body {
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
-  background-image: linear-gradient(to right, #f46b45 0%, #eea849  51%, #f46b45  100%);
+  background-image: linear-gradient(
+    to right,
+    #f46b45 0%,
+    #eea849 51%,
+    #f46b45 100%
+  );
   color: white;
-  transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-  -webkit-transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-  -moz-transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-  -ms-transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-  -o-transition: cubic-bezier(0.215, 0.610, 0.355, 1) .5s;   
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  -moz-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  -ms-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  -o-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-.btn a:hover{
-cursor: pointer;
-transform: translateY(-3px);
--webkit-transform: translateY(-3px);
--moz-transform: translateY(-3px);
--ms-transform: translateY(-3px);
--o-transform: translateY(-3px);
+.btn a:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
 }
 
-/* Media Queries*/
+/*LA FABRICA*/
+.fabricaContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr) auto;
+  row-gap: auto;
+  column-gap: 3%;
 
-/* Laptop*/
-@media screen and (max-width: 1440px) {
-  .header {
-    font-size: 15px;
-  }
+  grid-template-areas:
+    "num1  num1 fabImg"
+    "num2  num2 fabImg2"
+    "num3  num3 fabImg3"
+    "text  text text";
 }
+
+/*Grid area*/
+.num1 {
+  grid-area: num1;
+}
+
+.num2 {
+  grid-area: num2;
+}
+
+.num3 {
+  grid-area: num3;
+}
+
+.textFabrica {
+  grid-area: text;
+  text-align: center;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 130%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.textFabrica h2 {
+  margin-bottom: 1%;
+}
+
+.card {
+  margin: auto;
+  padding: auto;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 130%;
+  display: flex;
+  flex-direction: row; /*jsutify-content: center y align-items:center son los indicadores para centrar elementos en css*/
+  align-items: center;
+  text-align: justify;
+}
+.fabImg {
+  grid-area: fabImg;
+}
+
+.fabImg2 {
+  grid-area: fabImg2;
+}
+
+.fabImg3 {
+  grid-area: fabImg3;
+}
+
+.cardImg img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height: 250px;
+}
+
+/* MEDIA QUERIES*/
 
 /*Laptop*/
 @media screen and (max-width: 1024px) {
@@ -306,6 +366,32 @@ transform: translateY(-3px);
     display: inline-block;
     padding: 0 10px;
   }
+
+  .card-footer {
+    text-align: justify;
+  }
+
+  .contactContainer {
+    grid-template:
+      "contactForm " auto
+      " contactImg" auto
+      " iframeContact " auto
+      "contactLocation"auto /
+        auto;
+  }
+
+  .fabricaContainer {
+    grid-template:
+      "num1 "auto
+      "fabImg" auto
+      " num2 "auto
+      "fabImg2" auto
+      " num3  "auto
+      "fabImg3" auto
+      "text "auto /
+        auto;
+  }
+
 
   footer {
     display: flex;
@@ -321,37 +407,35 @@ transform: translateY(-3px);
     font-size: 10px;
     color: whitesmoke;
   }
-  
+
   .main-content {
     display: flex;
     flex-direction: column;
-    
   }
-  
+
   .main-content .box {
     flex-basis: 50%;
     padding: 10px 20px;
     margin-left: 30px;
   }
-  
+
   .box h2 {
     font-weight: 100;
     text-transform: uppercase;
   }
-  
+
   .box .content {
     margin: 0; /* es lo mismo que colocar un margin top:0; haceindo que se separe lo items de los elementos de arriba*/
   }
-  
+
   .left .content .social {
-    margin:0;
+    margin: 0;
   }
-  
+
   .left .content .social a {
     /*padding: 0 10px;*/
     color: white;
   }
-   
 }
 
 /*Tablet*/
@@ -380,41 +464,40 @@ transform: translateY(-3px);
     font-size: 10px;
     color: whitesmoke;
   }
-  
+
   .main-content {
     display: flex;
     flex-direction: column;
-    
   }
-  
+
   .main-content .box {
     flex-basis: 50%;
     padding: 10px 20px;
     margin-left: 30px;
   }
-  
+
   .box h2 {
     font-weight: 100;
     text-transform: uppercase;
   }
-  
+
   .box .content {
     margin: 0; /* es lo mismo que colocar un margin top:0; haceindo que se separe lo items de los elementos de arriba*/
   }
-  
+
   .left .content .social {
-    margin:0;
+    margin: 0;
   }
-  
+
   .left .content .social a {
     /*padding: 0 10px;*/
     color: white;
-  }
+  } 
+
 }
 
-
 /*Mobile*/
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -425,58 +508,20 @@ transform: translateY(-3px);
     /*justify-content: space-evenly;*/ /*space-evely: distribuye los items de manera similar entre el conteiner*/
   }
 
-  .navLinks{
+  .navLinks {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
     line-height: 20px;
     align-items: center;
   }
-
-  /*FOOTER*/
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /*position: fixed;*/ /*como hacer para que el footer quede fijo pero se mueva y no intervenga en la navegacion de la pagina*/
-    bottom: 0px;
-    width: 100%;
-    /*background: #111;*/
-    background-image: linear-gradient(45deg, rgb(20, 19, 19), rgb(245, 63, 17));
-    font-family: "Reem Kufi", sans-serif;
-    font-size: 10px;
-    color: whitesmoke;
+  .contactContainer {
+    grid-template:
+      "contactForm " auto
+      " contactImg" auto
+      " iframeContact " auto
+      "contactLocation"auto /
+        auto;
   }
-  
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  
-  .main-content .box {
-    flex-basis: 50%;
-    padding: 10px 20px;
-    margin-left: 30px;
-  }
-  
-  .box h2 {
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-  
-  .box .content {
-    margin: 0; /* es lo mismo que colocar un margin top:0; haceindo que se separe lo items de los elementos de arriba*/
-  }
-  
-  .left .content .social {
-    margin:0;
-  }
-  
-  .left .content .social a {
-    /*padding: 0 10px;*/
-    color: white;
-  }
-   
 }
+
