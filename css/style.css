@@ -171,28 +171,6 @@ footer {
     text-align: justify;
   }
 
-  .contactContainer {
-    grid-template:
-      "contactForm " auto
-      " contactImg" auto
-      " iframeContact " auto
-      "contactLocation"auto /
-        auto;
-  }
-
-  .fabricaContainer {
-    grid-template:
-      "num1 "auto
-      "fabImg" auto
-      " num2 "auto
-      "fabImg2" auto
-      " num3  "auto
-      "fabImg3" auto
-      "text "auto /
-        auto;
-  }
-
-
   footer {
     display: flex;
     flex-direction: column;
@@ -296,13 +274,6 @@ footer {
 /*Mobile*/
 @media screen and (max-width: 425px) {
   
-  .contactContainer {
-    grid-template:
-      "contactForm " auto
-      " contactImg" auto
-      " iframeContact " auto
-      "contactLocation"auto /
-        auto;
-  }
+
 }
 
