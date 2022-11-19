@@ -4,14 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <!--SEO-->
+    <!-- KEYWORDS-->
+    <meta
+      name="keywords"
+      content=" contacto,telefono cerveceria artesanal,cerveza, cervesa, cerveceria artesanal salta, cerveza artesanal, cerveceria salta, salta argentina, cerveceria salteña"
+    />
+    <!--META DESCRIPTION-->
+    <meta
+      name="description"
+      content="Buscas cerveza artesanal.Contactanos por mail o telefono!"
+    />
+    <!--Boostrap CDN LINK-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&family=Roboto+Mono:wght@600&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!--CDN FONTS-LINK-->
+    <link
+      href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
       rel="stylesheet"
     />
-  <!--iCONS-->
+     <!--Gerogia-->
+     <link
+     href="https://fonts.cdnfonts.com/css/georgia-pro-cond"
+     rel="stylesheet"
+   />
+    <!--Link css-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--iCONS-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -19,97 +42,168 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-     <!--Boostrap CDN LINK-->
-     <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-     crossorigin="anonymous"
-   />
-     <!--Link css-->
-   <link rel="stylesheet" href="../css/style.css" />
-    <title>Document</title>
+    <title>Contactos</title>
   </head>
-
-  <body>
-    <!--HEADER-NAVBAR-->
-    <header class="header">
-      <img class="logo" src="../media/logo/laceluBirra.png" alt="" />
-      <nav>
-        <ul class="navLinks">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./productos.html">Productos</a></li>
-          <li><a href="./servicios.html">Servicios</a></li>
-          <li><a href="./contacto.html">CONTACTO</a></li>
-          <li><a href="./lafabrica.html">LA FABRICA</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-      <div class="contactContainer">
-      <div class="contactForm " >
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nombre Y Apellido</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
-          <label for="exampleFormControlInput1" class="form-label">Direccion de E-mail</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-        </div>
-        <div>
-          <input class="btn btn-primary" type="submit" value="Enviar">
-        </div>
-      </div>
-
-      <div class="contactImg">
-        <img src="../media/laceluBirra/IMG_20220802_182311_904.jpg" alt="" />
-      </div>
-
-      <div class="contactLocation" >
-        <h2>Contacto</h2>
-        <div class="content">
-          <div class="place">
-            <span><i class="fa-solid fa-location-dot"></i></span>
-            <span>Olavarria 669, Salta-Argentina</span>
-          </div>
-          <div class="phone">
-            <span><i class="fa-solid fa-phone"></i></span>
-            <span>Tel:3875821402</span>
-          </div>
-          <div class="email">
-            <span><i class="fa-solid fa-envelope"></i></span>
-            <span>LaCeluBirra@gmail.com</span>
-          </div>
-          <div class="horarios">
-            <span><i class="fa-regular fa-clock"></i></span>
-            <span>Lunes a Viernes 9 a 17hs - Sábados 10 a 13hs</span>
-          </div>
+  <body class="contactBody">
+    <!--navBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbarFont text-uppercase">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../media/logo/laceluBirra.png" alt="" class="laceluLogo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./productos.html"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./servicios.html"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./lafabrica.html"
+                >La fabrica</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <iframe
-        class="iframeContact"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.3727796040431!2d-65.43259909842163!3d-24.796669999051137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc345dcf4bfcf%3A0xf5954a03d9a5595f!2sTu%20Birra%20Insumos%20Cerveceros!5e0!3m2!1sen!2sar!4v1664311296626!5m2!1sen!2sar"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-      </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+    </nav>
+    <!--Main-->
+    <div class="container-fluid">
+        <div class="row">
+            <!--Formulario-->
+          <div class="col-xxl-6 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y apellido">
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Direcion de Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="miCorreo@email.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Escribinos tu consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">Enviar</button> 
+          </div>
+          
+          <div class="col-xxl-6 col-xl-8 col-lg-8 col-md-12 col-sm-12 my-4 ">
+            <img src="../media/laceluBirra/puntos_venta.jpg" alt="" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-xxl-12 col-xl-412 col-lg-12 col-md-12 col-sm-12">
+                <iframe
+                class="iframeContact"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.3727796040431!2d-65.43259909842163!3d-24.796669999051137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc345dcf4bfcf%3A0xf5954a03d9a5595f!2sTu%20Birra%20Insumos%20Cerveceros!5e0!3m2!1sen!2sar!4v1664311296626!5m2!1sen!2sar"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <!-- 1.primero declacramos un <div class=contenedor> que va a contener los elementos del footer-->
+        <div class="main-content">
+          <!--2.separamos por cajas los elementos que ocuparan el footer-->
+          <!--declaramos tres cajas una izquierda, central y derecha-->
+          <!--Caja izquierda-->
+          <div class="left box">
+            <h2>NOSOTROS</h2>
+            <div class="content">
+              <p>
+                Somos una empresa Salteña, apasionados por la fabricacion de
+                Cerveza artesanal desde 2016. Contamos con variedades de Cervezas
+                autoctonas de la region y brindamos servicios de canillas
+                cerveceras para distintos eventos.
+              </p>
+              <div class="social">
+                <a href="https://www.facebook.com/lacelubirra"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/lacelubirra/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://wa.me/543875013207?text=Hola%20en%20que%20podemos%20ayudarte?"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--Caja central-->
+          <div class="center box">
+            <h2>DIRECCION</h2>
+            <div class="content">
+              <div class="place">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span>Olavarria 669, Salta-Argentina</span>
+              </div>
+              <div class="phone">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span>Tel:3875821402</span>
+              </div>
+              <div class="email">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>LaCeluBirra@gmail.com</span>
+              </div>
+              <div class="horarios">
+                <span><i class="fa-regular fa-clock"></i></span>
+                <span>Lunes a Viernes 9 a 17hs - Sábados 10 a 13hs</span>
+              </div>
+            </div>
+          </div>
+          <!--Caja Derecha-->
+          <div class="right box">
+            <h2>CONTACTO</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">email*</div>
+                  <input type="email" required />
+                </div>
+                <div class="msg">
+                  <div class="text">message*</div>
+                  <textarea name="" id="" cols="30" rows="5" required></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+  

@@ -4,21 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&family=Roboto+Mono:wght@600&display=swap"
-      rel="stylesheet"
+    <!--SEO-->
+    <!-- KEYWORDS-->
+    <meta
+      name="keywords"
+      content=" cervezas latas, latas cervesa,cerveza, cervesa, cerveceria artesanal, cerveza artesanal, cerveceria salta, salta argentina, cerveceria salteña"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
-      rel="stylesheet"
-    />
-    <!--Open Sans-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
-      rel="stylesheet"
+    <!--META DESCRIPTION-->
+    <meta
+      name="description"
+      content="Te mostramos las variedades de cervezas en lata que tenemos para ofrecerte.Contamos con six pack que lo armas a tu gusto!"
     />
     <!--Boostrap CDN LINK-->
     <link
@@ -27,265 +22,231 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <!--iCONS-->
+    <!--CDN fontAwesome-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--FontsAwesome CDN-->
+    <!--CDN Fonts-->
+    <!-- Helvetica-->
     <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <!--Link css-->
+    <!--Gerogia-->
+    <!--Gerogia-->
+    <link
+      href="https://fonts.cdnfonts.com/css/georgia-pro-cond"
+      rel="stylesheet"
+    />
+    <!--Link style CSS-->
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Document</title>
+    <title>Productos</title>
   </head>
-
-  <body>
-    <!--HEADER-NAVBAR-->
-    <header class="header">
-      <img class="logo" src="../media/logo/laceluBirra.png" alt="" />
-      <nav>
-        <ul class="navLinks">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./productos.html">PRODUCTOS</a></li>
-          <li><a href="./servicios.html">Servicios</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./lafabrica.html">LA FABRICA</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!--MAIN-->
-    <div class="container-fluid">
-      <div class="cards">
-        <div class="ipa">
-          <div class="img">
+  <body class="productsBody">
+    <!--navBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbarFont text-uppercase">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../media/logo/laceluBirra.png" alt="" class="laceluLogo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./productos.html"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./servicios.html"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./lafabrica.html"
+                >La fabrica</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Cards bootstrap-->
+    <div class="container productsContainer">
+      <div class="row mt-4 mx-auto text-center">
+        <div class="col-lg-4 col-md-6 gy-4">
+          <div
+            class="card text-center bg-transparent border-0"
+            id="stone"
+            style="width: 18rem"
+          >
             <img
-              src="../media/laceluBirra/cervezas/banners_cervezas/cerveza_loog.svg"
-              alt=""
+              src="../media/cervezas/stone_ipa.png"
+              class="card-img-top"
+              alt="..."
             />
-          </div>
-          <div>
             <div class="card-body">
-              <h2 id="Ipa">STONE IPA</h2>
-              <p id="info-ipa">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                eos recusandae adipisci amet deleniti in, ex quia voluptatem
-                tempora enim eum sunt ab, deserunt odit quaerat aspernatur
-                beatae! Eligendi, sed.
+              <h5 class="card-title">STONE IPA</h5>
+              <p class="card-text">
+                <span>Sabores y aromas frutales</span> intensos, cuerpo suave y
+                sensación en boca con textura delicada, turbia. Se percibe menos
+                amargor que en las IPAs tradicionales, pero el lúpulo siempre es
+                dominante.
               </p>
-            </div>
-            <div class="card-footer">
-              <div class="left-footer">
-                <span><strong>ALCOHOL 8%</strong></span>
-              </div>
-              <div class="right-footer">
-                <div class="cuerpo">
-                  <span class="price"><strong>CUERPO</strong></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <!--<div>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                </div>-->
-                </div>
-                <div class="amargor">
-                  <span class="price"><strong>AMARGOR</strong></span>
-                  <span class="favorite"
-                    ><i class="fa-brands fa-raspberry-pi"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-brands fa-raspberry-pi"></i
-                  ></span>
-                </div>
-              </div>
+              <a href="#" class="btn btn-dark">Comprar</a>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="cards">
-        <div class="ipa" id="regalona">
-          <div class="img">
+        <!--Beer-->
+        <div class="col-lg-4 col-md-6 gy-4">
+          <div
+            class="card text-center bg-transparent border-0"
+            id="stone"
+            style="width: 18rem"
+          >
             <img
-              src="../media/laceluBirra/cervezas/banners_cervezas/regalona_loog.svg"
-              alt=""
+              src="../media/cervezas/dulce_salteña.png"
+              class="card-img-top"
+              alt="..."
             />
-          </div>
-          <div>
             <div class="card-body">
-              <h2 id="Ipa">LA REGALONA</h2>
-              <p id="info-ipa">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                eos recusandae adipisci amet deleniti in, ex quia voluptatem
-                tempora enim eum sunt ab, deserunt odit quaerat aspernatur
-                beatae! Eligendi, sed.
+              <h5 class="card-title">DULCE SALTEÑA</h5>
+              <p class="card-text">
+                Existen muchas cervezas <span>doradas y refrescantes</span> .
+                Pero frutadas y con destellos finales de lúpulo, sólo hay un
+                estilo: Dulce Salteña. Frabricada con ingredientes de la zona
+                fruticola de salta
               </p>
-            </div>
-            <div class="card-footer">
-              <div class="left-footer">
-                <span><strong>ALCOHOL 8%</strong></span>
-              </div>
-              <div class="right-footer">
-                <div class="cuerpo">
-                  <span class="price"><strong>CUERPO</strong></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <!--<div>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                </div>-->
-                </div>
-                <div class="amargor">
-                  <span class="price"><strong>AMARGOR</strong></span>
-                  <span class="favorite"
-                    ><i class="fa-brands fa-raspberry-pi"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-brands fa-raspberry-pi"></i
-                  ></span>
-                </div>
-              </div>
+              <a href="#" class="btn btn-dark">Comprar</a>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="cards">
-        <div class="ipa" id="queen">
-          <div class="img">
+        <!--Beer-->
+        <div class="col-lg-4 col-md-6 gy-4">
+          <div
+            class="card text-center bg-transparent border-0"
+            id="stone"
+            style="width: 18rem"
+          >
             <img
-              src="../media/laceluBirra/cervezas/banners_cervezas/queen_loog.svg"
-              alt=""
+              src="../media/cervezas/golden.png"
+              class="card-img-top"
+              alt="..."
             />
-          </div>
-          <div>
             <div class="card-body">
-              <h2 id="Ipa">Queen GOLDEN</h2>
-              <p id="info-ipa">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                eos recusandae adipisci amet deleniti in, ex quia voluptatem
-                tempora enim eum sunt ab, deserunt odit quaerat aspernatur
-                beatae! Eligendi, sed.
+              <h5 class="card-title">QUEEN GOLDEN</h5>
+              <p class="card-text">
+                Cerveza rubia que presenta las carcteristicas necesarias para
+                alivianar el calor pesado,de
+                <span>sabor intenso frutal y liviano</span> sabor intenso frutal
+                y liviano, ideal para un trago de tarde mientras compartis con
+                amigos.
               </p>
-            </div>
-            <div class="card-footer">
-              <div class="left-footer">
-                <span><strong>ALCOHOL 8%</strong></span>
-              </div>
-              <div class="right-footer">
-                <div class="cuerpo">
-                  <span class="price"><strong>CUERPO</strong></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <!--<div>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                </div>-->
-                </div>
-                <div class="amargor">
-                  <span class="price"><strong>AMARGOR</strong></span>
-                  <span class="favorite"
-                    ><i class="fa-brands fa-raspberry-pi"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-brands fa-raspberry-pi"></i
-                  ></span>
-                </div>
-              </div>
+              <a href="#" class="btn btn-dark">Comprar</a>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="cards">
-        <div class="ipa" id="negra-poly">
-          <div class="img">
+        <!--Beer-->
+        <div class="col-lg-4 col-md-6 gy-4">
+          <div
+            class="card text-center bg-transparent border-0"
+            id="stone"
+            style="width: 18rem"
+          >
             <img
-              src="../media/laceluBirra/cervezas/banners_cervezas/negra_poly_loog.svg"
-              alt=""
+              src="../media/cervezas/soñadora.png"
+              class="card-img-top"
+              alt="..."
             />
-          </div>
-          <div>
             <div class="card-body">
-              <h2 id="Ipa">Negra Poly</h2>
-              <p id="info-ipa">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                eos recusandae adipisci amet deleniti in, ex quia voluptatem
-                tempora enim eum sunt ab, deserunt odit quaerat aspernatur
-                beatae! Eligendi, sed.
+              <h5 class="card-title">LA REGALONA</h5>
+              <p class="card-text">
+                Una cerveza tipo lager, de color dorado brillante,<span
+                  >liviana, refrescante y de amargor medio-bajo</span
+                >
+                Inspirada en la "Doncella",la mayor de las 3 niñas halladas en
+                el volcán Llullaillaco
               </p>
+              <a href="#" class="btn btn-dark">Comprar</a>
             </div>
-            <div class="card-footer">
-              <div class="left-footer">
-                <span><strong>ALCOHOL 8%</strong></span>
-              </div>
-              <div class="right-footer">
-                <div class="cuerpo">
-                  <span class="price"><strong>CUERPO</strong></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-solid fa-wheat-awn"></i
-                  ></span>
-                  <!--<div>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                  <span class="favorite"><i class="fa-solid fa-star"></i></span>
-                </div>-->
-                </div>
-                <div class="amargor">
-                  <span class="price"><strong>AMARGOR</strong></span>
-                  <span class="favorite"
-                    ><i class="fa-brands fa-raspberry-pi"></i
-                  ></span>
-                  <span class="favorite"
-                    ><i class="fa-brands fa-raspberry-pi"></i
-                  ></span>
-                </div>
-              </div>
+          </div>
+        </div>
+        <!--Beer-->
+        <div class="col-lg-4 col-md-6 gy-4">
+          <div
+            class="card text-center bg-transparent border-0"
+            id="stone"
+            style="width: 18rem"
+          >
+            <img
+              src="../media/cervezas/negra_poly.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">NEGRA POLY</h5>
+              <p class="card-text">
+                Maltas oscuras. Sabor y aroma penetrante y nocturno.
+                <span>Chocolate, azúcar negro y café</span> . Esta variedad es
+                un tributo a la tradicion del rock nacional y su sabor unico.
+              </p>
+              <a href="#" class="btn btn-dark">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <!--Beer-->
+        <div class="col-lg-4 col-md-6 gy-4">
+          <div
+            class="card text-center bg-transparent border-0"
+            id="stone"
+            style="width: 18rem"
+          >
+            <img
+              src="../media/cervezas/golden_strong.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">INTENSIDAD</h5>
+              <p class="card-text">
+                Una cerveza belga, dulce y alcohólica. De carácter
+                <span>fuerte y chispeante</span> , de fuertes de la puna
+                saltena.Pasá a conocerla por nuestra fábrica y por los puntos de
+                venta publicados
+              </p>
+              <a href="#" class="btn btn-dark">Comprar</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!--FOOTER-->
+    <!--Footer-->
+    <!--informacion-->
     <footer>
       <!-- 1.primero declacramos un <div class=contenedor> que va a contener los elementos del footer-->
       <div class="main-content">
@@ -297,14 +258,21 @@
           <div class="content">
             <p>
               Somos una empresa Salteña, apasionados por la fabricacion de
-              Cerveza artesanal desde 2019. Contamos con variedades de Cervezas
+              Cerveza artesanal desde 2016. Contamos con variedades de Cervezas
               autoctonas de la region y brindamos servicios de canillas
               cerveceras para distintos eventos.
             </p>
             <div class="social">
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.facebook.com/lacelubirra"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/lacelubirra/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="https://wa.me/543875013207?text=Hola%20en%20que%20podemos%20ayudarte?"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
             </div>
           </div>
         </div>

@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&family=Roboto+Mono:wght@600&display=swap"
-      rel="stylesheet"
+      <!--SEO-->
+    <!-- KEYWORDS-->
+    <meta
+      name="keywords"
+      content=" alquiler choperas salta,growlers, recarga, salta, capital, choperas, cervesa,cerveza, cervesa, cerveceria artesanal, cerveza artesanal, cerveceria salta, salta argentina, cerveceria salteña"
+    />
+    <!--META DESCRIPTION-->
+    <meta
+      name="description"
+      content="Realizamos recarga de growlers y alquiler de choperas para eventos."
     />
     <!--Boostrap CDN LINK-->
     <link
@@ -23,6 +27,11 @@
       href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
       rel="stylesheet"
     />
+     <!--Gerogia-->
+     <link
+     href="https://fonts.cdnfonts.com/css/georgia-pro-cond"
+     rel="stylesheet"
+   />
     <!--Link css-->
     <link rel="stylesheet" href="../css/style.css" />
     <!--iCONS-->
@@ -33,66 +42,105 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Servicios</title>
   </head>
-  <body>
-    <!--HEADER-NAVBAR-->
-    <header class="header">
-      <img
-        class="logo"
-        src="../media/logo/laceluBirra.png"
-        alt=""
-      /><!--./media/logo/laceluBirra.png-->
-      <nav>
-        <ul class="navLinks">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./productos.html">Productos</a></li>
-          <li><a href="./servicios.html">SERVICIOS</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./lafabrica.html">LA FABRICA</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!--MAIN-->
-    <!--Realizar cards de servicios-->
-    <main class="container-fluid row">
-      
-      <div class="col-md-6">
-        <div class="growlerContainer">
-          <img src="../media/laceluBirra/growler.svg" alt="" />
-        </div>
-        <div class="growlerInfo">
-          <h2>RECARGA TU GROWLER</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            repudiandae suscipit, quos molestias quae dolor culpa ea nulla
-            dolore dignissimos a atque, incidunt rerum nisi? Fugiat delectus
-            vitae cupiditate impedit!
-          </p>
-          <div class="btn">
-            <a href="">RECARGA TU GROWLER</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="growlerContainer">
-          <img src="../media/laceluBirra/canillas.svg" alt="" />
-        </div>
-        <div class="growlerInfo">
-          <h2>ALQUILER DE CHOPERAS</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            repudiandae suscipit, quos molestias quae dolor culpa ea nulla
-            dolore dignissimos a atque, incidunt rerum nisi? Fugiat delectus
-            vitae cupiditate impedit!
-          </p>
-          <div class="btn">
-            <a href="" class=" ">ALQUILAR UN CHOPP</a>
-          </div>
+  <body class="bodyService">
+    <!--navBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbarFont text-uppercase">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../media/logo/laceluBirra.png" alt="" class="laceluLogo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./lafabrica.html">La fabrica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
+    </nav>
+   <!--Main-->
+   <div class="container-fluid">
+    <div class="row my-5">
+      <div
+        class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 img"
+      >
+        <img src="../media/laceluBirra/recargas.jpg" class="img-fluid ms-2 rounded" alt="" />
+      </div>
+      <div
+        class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 textService"
+      >
+        <h2 class="text-center">RECARGA DE GROWLERS</h2>
+        <p class="m-4 p-4 text-start">
+          Sabemos que, además de venir a tomar unas pintas al bar, te gusta
+          disfrutar de la cerveza artesanal en tu casa y caer a tus juntadas
+          de amigos o familiares con una buena birra, por eso te ofrecemos
+          Growlers y Recargas de 1.9 litros, Pets descartables de 1 litro y
+          ahora también Pets de 500ml! Cuidamos la calidad de la cerveza, por
+          eso contamos con Canilla PEGAS, un sistema de última generación para
+          el embotellado contrapresión de cerveza, que permite mantener el
+          mejor sabor y sus propiedades, para que puedas llevarla donde
+          quieras.
+        </p>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div
+        class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 textService"
+      >
+        <h2 class="text-center">ALQUILER DE CHOPERAS</h2>
+        <p class="m-4 p-4 text-start">
+          Contamos con una amplia variedad de cervezas para servirlas en el
+          evento que mas te guste, nuestras choperas de diseño comodo y facil
+          de transportar son perfectas para cualquier reunion.Realizamos
+          cobertura de eventos en salta y el interior de la provincia.
+          Contamos con barriles para 3 tipos distintos de cervezas. Nos
+          encargamos de hacerte llegar y retirar nuestros chopp.
+        </p>
+      </div>
+      <div
+        class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 text img"
+      >
+        <img src="../media/laceluBirra/alquiler.jpg" class="img-fluid ms-2 rounded " alt="" />
+      </div>
+    </div>
+    <div class="row">
+      <div
+        class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12 video"
+      >
+        <video
+          src="../media/video/lacelubirra_1668013827981686.mp4"
+          controls
+        ></video>
+      </div>
+    </div>
+  </div>
     <!--FOOTER-->
     <footer>
       <!-- 1.primero declacramos un <div class=contenedor> que va a contener los elementos del footer-->
@@ -105,14 +153,14 @@
           <div class="content">
             <p>
               Somos una empresa Salteña, apasionados por la fabricacion de
-              Cerveza artesanal desde 2019. Contamos con variedades de Cervezas
+              Cerveza artesanal desde 2016. Contamos con variedades de Cervezas
               autoctonas de la region y brindamos servicios de canillas
               cerveceras para distintos eventos.
             </p>
             <div class="social">
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.facebook.com/lacelubirra"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/lacelubirra/"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://wa.me/543875013207?text=Hola%20en%20que%20podemos%20ayudarte?"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
           </div>
         </div>

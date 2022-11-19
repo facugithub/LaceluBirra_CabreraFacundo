@@ -4,72 +4,41 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Variables*/
+:root{
+  --color-dark:#1b1b1b;
+  --color-light:#ffffff;
+  --color-gold:#fff701;
+}
 /*Background general body*/
-
 body {
-  background-color: rgb(241, 238, 235);
+  background-color:var(--color-dark);
+  font-family: 'Helvetica 35 Thin', sans-serif;
+  font-weight: 200;
 }
-
-/*HEADER-NAVBAR*/
-.header {
-  background-color: black;
-  height: 100px;
+/*NavBar*/
+.navbar{
+background-color: var(--color-dark);
+}
+.laceluLogo{
+  height: 80px;
   width: auto;
-  font-family: "Reem Kufi", sans-serif; /*funte del codigo a usar en el header*/
-  font-size: 20px; /*tamaño de la letra*/
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /*justify-content: space-evenly;*/ /*space-evely: distribuye los items de manera similar entre el conteiner*/
-  padding: 5px 10%;
+}
+.navbarFont{
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.nav-link{
+  margin-left: 3.5rem;
 }
 
-/*Logo*/
-.header img:hover {
-  transform: scale(
-    1.2
-  ); /*permite determinar una transformacion con aumento desu tamañan a 1.2*/
-}
-
-.logo {
-  height: 130px;
-  width: auto;
-  cursor: pointer;
-  transition: all 0.9s;
-}
-
-/*Header navLinks*/
-.header .navLinks li {
-  display: inline-block;
-  padding: 0 30px;
-}
-
-.navLinks a {
-  color: aliceblue;
-  text-decoration: none;
-}
-
-/*Transitions navLinks*/
-.header .navLinks li:hover {
-  /*hover nos permite establecer que al seleccionar el elemento de la pagina, se aplique algun evento que indique su seleccion*/
-  transform: scale(1.1);
-  transition: all 0.4s;
-}
-
-.header .navLinks li a:hover {
-  color: rgb(242, 105, 7);
-  transition: all 0.8s;
-}
-
-/*FOOTER*/
+/*Footer*/
 footer {
   /*position: fixed;*/ /*como hacer para que el footer quede fijo pero se mueva y no intervenga en la navegacion de la pagina*/
   bottom: 0px;
   width: 100%;
   /*background: #111;*/
   background-image: linear-gradient(45deg, rgb(20, 19, 19), rgb(245, 63, 17));
-  font-family: "Reem Kufi", sans-serif;
+  font-family: 'Georgia Pro Cond', sans-serif;
   color: whitesmoke;
 }
 
@@ -120,252 +89,83 @@ footer {
 .center i {
   margin-bottom: 15px;
 }
+/*Productos*/
+.productsBody{
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  font-family: 'Georgia Pro Light', sans-serif;
+}
+
+.productsContainer{
+  margin: 2rem auto;
+}
+
+
+.productsContainer h5{
+  font-weight: bold;
+}
+
+.productsContainer span{
+  font-weight: bold;
+}
 
 /*CONTACTO*/
-/* a desarrollar*/
-.contactContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "contactImg contactForm "
-    " iframeContact contactLocation";
-  grid-column-gap: 5%;
-  grid-row-gap: 5%;
-  margin-top: 1%;
-  background-color: rgb(241, 238, 235);
+  /*contacto*/
+  .iframeContact{
+    width: 100%;
+}
+.contactBody{
+  background-color: var(--color-light);
+  font-family: 'Georgia Pro Cond', sans-serif;
+
 }
 
-.contactImg {
-  grid-area: contactImg;
-}
-
-.contactImg img {
-  max-width: 100%;
-  border-radius: 3%;
-  -webkit-border-radius: 3%;
-  -moz-border-radius: 3%;
-  -ms-border-radius: 3%;
-  -o-border-radius: 3%;
-}
-
-.contactForm {
-  grid-area: contactForm;
-}
-
-.iframeContact {
-  grid-area: iframeContact;
-}
-
-.contactLocation {
-  grid-area: contactLocation;
-  line-height: 30px;
-}
-
-/*PRODUCTOS*/
-
-/*Imagenes de Cervezas*/
-.ipa .img img {
-  max-width: 100%;
-}
-
-.cards .ipa {
-  background-color: rgb(243, 193, 29);
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  margin: 3%;
-  padding: 3%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#regalona {
-  background-color: #3fa796;
-}
-#queen {
-  background-color: #8267be;
-}
-#dulce-salteña {
-  background-color: #502064;
-}
-#negra-poly {
-  background-color: #d8cbbb;
-}
-
-#Ipa {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 2rem;
-  color: whitesmoke;
-  text-align: center;
-}
-#info-ipa {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  color: whitesmoke;
-  text-align: center;
-}
-
-.card-footer {
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*justify-content: space-evenly;*/
-  margin-top: 1%;
-  font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  left: 3%;
-  bottom: 3%;
-}
 
 /*SERVICIOS*/
-.growlerInfo p {
-  text-align: center;
-  padding: 10px 10px;
-  margin-right: 10px;
-}
-.growlerInfo h2 {
-  text-align: center;
-}
 
-.growlerContainer img {
+.bodyService{
+  background-color: var(--color-light);
+  font-family: 'Georgia Pro Cond', sans-serif;
+
+}
+.video video{
+  height: 500px;
   width: 100%;
-  margin: 5px 5px;
-  border-radius: 3%;
-  -webkit-border-radius: 3%;
-  -moz-border-radius: 3%;
-  -ms-border-radius: 3%;
-  -o-border-radius: 3%;
-}
-.growlerInfo .btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+  }
 
-.btn a {
-  text-decoration: none;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 2large;
-  padding: 18px 35px;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
-  background-image: linear-gradient(
-    to right,
-    #f46b45 0%,
-    #eea849 51%,
-    #f46b45 100%
-  );
-  color: white;
-  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  -moz-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  -ms-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  -o-transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-}
+  .img img{
+    height: 30rem;
+  }
 
-.btn a:hover {
-  cursor: pointer;
-  transform: translateY(-3px);
-  -webkit-transform: translateY(-3px);
-  -moz-transform: translateY(-3px);
-  -ms-transform: translateY(-3px);
-  -o-transform: translateY(-3px);
+  .textService{
+    color: #100f0f;
+    font-size: 1rem;
+  }
+  
+  .textService h2{
+    font-family: 'Helvetica Neue', sans-serif;
+    -webkit-transform: uppercase;
+    -moz-transform: uppercase;
+    -ms-transform: uppercase;
+    -o-transform: uppercase;
 }
-
 /*LA FABRICA*/
-.fabricaContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr) auto;
-  row-gap: auto;
-  column-gap: 3%;
-
-  grid-template-areas:
-    "num1  num1 fabImg"
-    "num2  num2 fabImg2"
-    "num3  num3 fabImg3"
-    "text  text text";
+#pics img{
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-/*Grid area*/
-.num1 {
-  grid-area: num1;
-}
+.bodyFactory{
+  background-color: var(--color-light);
+  font-family: 'Georgia Pro Cond', sans-serif;
 
-.num2 {
-  grid-area: num2;
-}
-
-.num3 {
-  grid-area: num3;
-}
-
-.textFabrica {
-  grid-area: text;
-  text-align: center;
-  font-family: "Reem Kufi", sans-serif;
-  font-size: 130%;
-  margin-bottom: 3%;
-  margin-top: 3%;
-}
-
-.textFabrica h2 {
-  margin-bottom: 1%;
-}
-
-.card {
-  margin: auto;
-  padding: auto;
-  font-family: "Reem Kufi", sans-serif;
-  font-size: 130%;
-  display: flex;
-  flex-direction: row; /*jsutify-content: center y align-items:center son los indicadores para centrar elementos en css*/
-  align-items: center;
-  text-align: justify;
-}
-.fabImg {
-  grid-area: fabImg;
-}
-
-.fabImg2 {
-  grid-area: fabImg2;
-}
-
-.fabImg3 {
-  grid-area: fabImg3;
-}
-
-.cardImg img {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  height: 250px;
 }
 
 /* MEDIA QUERIES*/
 
 /*Laptop*/
 @media screen and (max-width: 1024px) {
-  .header {
-    font-size: 10px;
-  }
-  .header .navLinks li {
-    display: inline-block;
-    padding: 0 10px;
-  }
+
 
   .card-footer {
     text-align: justify;
@@ -403,8 +203,8 @@ footer {
     width: 100%;
     /*background: #111;*/
     background-image: linear-gradient(45deg, rgb(20, 19, 19), rgb(245, 63, 17));
-    font-family: "Reem Kufi", sans-serif;
-    font-size: 10px;
+    font-family: 'Georgia Pro Cond', sans-serif;
+    font-size: 16px;
     color: whitesmoke;
   }
 
@@ -445,10 +245,7 @@ footer {
     padding: 1% 0;
   }
 
-  .header .navLinks li {
-    display: inline-block;
-    padding: 0 20px;
-  }
+  
 
   footer {
     display: flex;
@@ -460,8 +257,8 @@ footer {
     width: 100%;
     /*background: #111;*/
     background-image: linear-gradient(45deg, rgb(20, 19, 19), rgb(245, 63, 17));
-    font-family: "Reem Kufi", sans-serif;
-    font-size: 10px;
+    font-family: 'Georgia Pro Cond', sans-serif;
+    font-size: 16px;
     color: whitesmoke;
   }
 
@@ -498,23 +295,7 @@ footer {
 
 /*Mobile*/
 @media screen and (max-width: 425px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    height: 25%;
-    width: auto;
-    font-family: "Reem Kufi", sans-serif; /*funte del codigo a usar en el header*/
-    font-size: 10px; /*tamaño de la letra*/
-    /*justify-content: space-evenly;*/ /*space-evely: distribuye los items de manera similar entre el conteiner*/
-  }
-
-  .navLinks {
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    line-height: 20px;
-    align-items: center;
-  }
+  
   .contactContainer {
     grid-template:
       "contactForm " auto
